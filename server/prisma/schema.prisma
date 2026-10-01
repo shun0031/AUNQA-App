@@ -1,0 +1,141 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Role {
+  id          Int          @id @default(autoincrement())
+  role_name   String       @unique
+  permissions Permission[] @relation("RolePermissions")
+  users       User[]
+}
+
+model Permission {
+  id              Int    @id @default(autoincrement())
+  permission_name String @unique
+  roles           Role[] @relation("RolePermissions")
+}
+
+model Department {
+  id              Int      @id @default(autoincrement())
+  department_name String   @unique
+  users           User[]
+  courses         Course[]
+}
+
+model User {
+  id               Int      @id @default(autoincrement())
+  username         String   @unique
+  password_hash    String
+  full_name        String
+  address          String?  @db.Text
+  phone            String?
+  email            String   @unique
+  line_id          String?
+  profile_picture  String?
+  status           String   @default("active") // active, inactive
+  last_login       DateTime?
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+
+  role_id          Int
+  role             Role       @relation(fields: [role_id], references: [id])
+  department_id    Int?
+  department       Department? @relation(fields: [department_id], references: [id])
+
+  system_logs      SystemLog[]
+  files_uploaded   File[]
+  records_created  AunqaRecord[] @relation("CreatedRecords")
+  records_reviewed AunqaRecord[] @relation("ReviewedRecords")
+}
+
+model Course {
+  id            Int          @id @default(autoincrement())
+  course_name   String
+  status        String       @default("active")
+  department_id Int
+  department    Department   @relation(fields: [department_id], references: [id])
+  criteria      Criteria[]
+  records       AunqaRecord[]
+}
+
+model Criteria {
+  id            Int          @id @default(autoincrement())
+  criteria_no   String
+  criteria_name String
+  description   String?      @db.Text
+  academic_year String
+  course_id     Int
+  course        Course       @relation(fields: [course_id], references: [id])
+  records       AunqaRecord[]
+}
+
+model AunqaRecord {
+  id              Int      @id @default(autoincrement())
+  academic_year   String
+  description     String?  @db.Text
+  status          String   @default("draft") // draft, submitted, returned, confirmed
+  review_comment  String?  @db.Text
+  reviewed_date   DateTime?
+  confirmed_date  DateTime?
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+
+  criteria_id     Int
+  criteria        Criteria @relation(fields: [criteria_id], references: [id])
+  course_id       Int
+  course          Course   @relation(fields: [course_id], references: [id])
+
+  created_by_id   Int
+  created_by      User     @relation("CreatedRecords", fields: [created_by_id], references: [id])
+  reviewed_by_id  Int?
+  reviewed_by     User?    @relation("ReviewedRecords", fields: [reviewed_by_id], references: [id])
+
+  evidences       Evidence[]
+}
+
+model Evidence {
+  id            Int         @id @default(autoincrement())
+  evidence_type String      // file, image, text, link
+  text_content  String?     @db.Text
+  url_link      String?
+  uploaded_date DateTime    @default(now())
+  
+  record_id     Int
+  record        AunqaRecord @relation(fields: [record_id], references: [id], onDelete: Cascade)
+  file_id       Int?
+  file          File?       @relation(fields: [file_id], references: [id])
+}
+
+model File {
+  id            Int        @id @default(autoincrement())
+  original_name String
+  file_name     String
+  file_path     String
+  file_type     String
+  mime_type     String
+  file_size     Int
+  uploaded_date DateTime   @default(now())
+
+  uploaded_by_id Int
+  uploaded_by    User      @relation(fields: [uploaded_by_id], references: [id])
+
+  evidences      Evidence[]
+}
+
+model SystemLog {
+  id               Int      @id @default(autoincrement())
+  action           String
+  target_collection String
+  target_id        String?
+  detail           String?  @db.Text
+  ip_address       String?
+  timestamp        DateTime @default(now())
+
+  user_id          Int
+  user             User     @relation(fields: [user_id], references: [id])
+}

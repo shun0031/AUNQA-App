@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="System Diagram" id="sys1">
+    <mxGraphModel dx="3535" dy="1943" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1820" pageHeight="1480" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="text;html=1;fontSize=30;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1F2937;" value="แผนภาพระบบ (System Diagram): ระบบบันทึกข้อมูลและหลักฐาน AUN-QA สาขาครุศาสตร์อุตสาหกรรมคอมพิวเตอร์" vertex="1">
+          <mxGeometry height="60" width="1660" x="80" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C62828;strokeColor=#C62828;fontColor=#FFFFFF;fontSize=24;fontStyle=1;arcSize=25;shadow=1;" value="ผู้ดูแลระบบ (Admin)" vertex="1">
+          <mxGeometry height="110" width="440" x="110" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;strokeWidth=4;arcSize=4;" value="" vertex="1">
+          <mxGeometry height="600" width="500" x="80" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="text;html=1;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontColor=#C62828;" value="หน้าที่และสิทธิ์การใช้งาน" vertex="1">
+          <mxGeometry height="50" width="500" x="80" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C62828;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="กำหนดสิทธิ์ผู้ใช้งาน" vertex="1">
+          <mxGeometry height="58" width="440" x="110" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C62828;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="จัดการรหัสผ่านและผู้ใช้" vertex="1">
+          <mxGeometry height="58" width="440" x="110" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C62828;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="จัดการฐานข้อมูล" vertex="1">
+          <mxGeometry height="58" width="440" x="110" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C62828;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="เพิ่ม / ลบ / แก้ไขข้อมูลผู้ใช้งาน" vertex="1">
+          <mxGeometry height="58" width="440" x="110" y="694" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C62828;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="ตรวจสอบและจัดการไฟล์ทั้งหมด" vertex="1">
+          <mxGeometry height="58" width="440" x="110" y="762" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C62828;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="เพิ่มหลักสูตร" vertex="1">
+          <mxGeometry height="58" width="440" x="110" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C62828;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="แก้ไขเกณฑ์ในแต่ละปีการศึกษา" vertex="1">
+          <mxGeometry height="58" width="440" x="110" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E65100;strokeColor=#E65100;fontColor=#FFFFFF;fontSize=24;fontStyle=1;arcSize=25;shadow=1;" value="ผู้รับผิดชอบ AUN-QA" vertex="1">
+          <mxGeometry height="110" width="440" x="690" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=4;arcSize=4;" value="" vertex="1">
+          <mxGeometry height="600" width="500" x="660" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="text;html=1;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontColor=#E65100;" value="หน้าที่และสิทธิ์การใช้งาน" vertex="1">
+          <mxGeometry height="50" width="500" x="660" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E65100;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="ตรวจสอบสิทธิ์" vertex="1">
+          <mxGeometry height="58" width="440" x="690" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E65100;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="แก้ไขข้อมูลส่วนบุคคล" vertex="1">
+          <mxGeometry height="58" width="440" x="690" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E65100;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="ยืนยันสถานะการบันทึกข้อมูล" vertex="1">
+          <mxGeometry height="58" width="440" x="690" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E65100;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="ตรวจสอบและติดตามการบันทึกข้อมูล" vertex="1">
+          <mxGeometry height="58" width="440" x="690" y="694" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565C0;strokeColor=#1565C0;fontColor=#FFFFFF;fontSize=24;fontStyle=1;arcSize=25;shadow=1;" value="อาจารย์ สาขาครุศาสตร์อุตสาหกรรมคอมพิวเตอร์" vertex="1">
+          <mxGeometry height="110" width="440" x="1270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;strokeWidth=4;arcSize=4;" value="" vertex="1">
+          <mxGeometry height="600" width="500" x="1240" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="text;html=1;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1565C0;" value="หน้าที่และสิทธิ์การใช้งาน" vertex="1">
+          <mxGeometry height="50" width="500" x="1240" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="ตรวจสอบสิทธิ์" vertex="1">
+          <mxGeometry height="58" width="440" x="1270" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="แก้ไขข้อมูลส่วนบุคคล" vertex="1">
+          <mxGeometry height="58" width="440" x="1270" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;strokeWidth=3;fontSize=22;fontStyle=1;fontColor=#1F2937;" value="แนบหลักฐาน" vertex="1">
+          <mxGeometry height="58" width="440" x="1270" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;strokeWidth=2;dashed=1;fontSize=20;fontColor=#1F2937;align=left;spacingLeft=14;" value="• ไฟล์เอกสาร" vertex="1">
+          <mxGeometry height="50" width="370" x="1330" y="694" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;strokeWidth=2;dashed=1;fontSize=20;fontColor=#1F2937;align=left;spacingLeft=14;" value="• รูปภาพ" vertex="1">
+          <mxGeometry height="50" width="370" x="1330" y="756" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;strokeWidth=2;dashed=1;fontSize=20;fontColor=#1F2937;align=left;spacingLeft=14;" value="• ข้อความ" vertex="1">
+          <mxGeometry height="50" width="370" x="1330" y="818" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1565C0;strokeWidth=2;dashed=1;fontSize=20;fontColor=#1F2937;align=left;spacingLeft=14;" value="• ลิงก์ข้อมูล" vertex="1">
+          <mxGeometry height="50" width="370" x="1330" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E7D32;strokeColor=#1B5E20;fontColor=#FFFFFF;fontSize=28;fontStyle=1;arcSize=30;shadow=1;" value="ระบบยืนยันตัวตนและควบคุมสิทธิ์ (Login / Role-based Access Control)" vertex="1">
+          <mxGeometry height="90" width="1660" x="80" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" edge="1" parent="1" source="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=4;strokeColor=#C62828;fontSize=18;fontStyle=1;fontColor=#C62828;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;endSize=8;" target="c30" value="เข้าสู่ระบบ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" edge="1" parent="1" source="c30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=4;strokeColor=#C62828;fontSize=18;fontStyle=1;fontColor=#C62828;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;endSize=8;" target="c4" value="ตามสิทธิ์">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" edge="1" parent="1" source="c13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=4;strokeColor=#E65100;fontSize=18;fontStyle=1;fontColor=#E65100;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;endSize=8;" target="c30" value="เข้าสู่ระบบ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" edge="1" parent="1" source="c30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=4;strokeColor=#E65100;fontSize=18;fontStyle=1;fontColor=#E65100;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;endSize=8;" target="c14" value="ตามสิทธิ์">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" edge="1" parent="1" source="c20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=4;strokeColor=#1565C0;fontSize=18;fontStyle=1;fontColor=#1565C0;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;endSize=8;" target="c30" value="เข้าสู่ระบบ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" edge="1" parent="1" source="c30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=4;strokeColor=#1565C0;fontSize=18;fontStyle=1;fontColor=#1565C0;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;endSize=8;" target="c21" value="ตามสิทธิ์">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
